@@ -1,0 +1,45 @@
+.plume-air-panel-box {
+    spacing: 6px;
+}
+
+.plume-air-panel-label {
+    font-weight: bold;
+}
+
+.plume-air-header {
+    spacing: 4px;
+    min-width: 260px;
+}
+
+.plume-air-city {
+    font-weight: bold;
+    font-size: 1.05em;
+}
+
+.plume-air-aqi-badge {
+    font-weight: bold;
+}
+
+.plume-air-status {
+    opacity: 0.75;
+    font-size: 0.9em;
+}
+
+.plume-air-forecast-row {
+    spacing: 8px;
+    padding: 6px 0;
+}
+
+.plume-air-forecast-col {
+    spacing: 4px;
+}
+
+.plume-air-forecast-hour,
+.plume-air-forecast-val {
+    font-size: 0.9em;
+}
+
+.plume-air-pollutants {
+    font-size: 0.9em;
+    opacity: 0.9;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.plume-air-quality"
+          path="/org/gnome/shell/extensions/plume-air-quality/">
+    <key name="city" type="s">
+      <default>'Porte-de-Savoie'</default>
+      <summary>Ville sélectionnée</summary>
+      <description>Nom de la ville affichée dans l’extension.</description>
+    </key>
+    <key name="city-slug" type="s">
+      <default>'45.4989,6.0003'</default>
+      <summary>Coordonnées GPS de la ville</summary>
+      <description>Coordonnées latitude,longitude (ex. 45.4989,6.0003) ou vide pour géocodage automatique.</description>
+    </key>
+    <key name="data-url" type="s">
+      <default>''</default>
+      <summary>URL source JSON optionnelle</summary>
+      <description>Clé conservée pour compatibilité.</description>
+    </key>
+    <key name="refresh-interval" type="i">
+      <default>30</default>
+      <summary>Intervalle de mise à jour (minutes)</summary>
+      <description>Fréquence de rafraîchissement des données en minutes.</description>
+    </key>
+    <key name="api-token" type="s">
+      <default>''</default>
+      <summary>Token API optionnel</summary>
+      <description>Non requis avec Open-Meteo (conservé pour compatibilité).</description>
+    </key>
+  </schema>
+</schemalist>

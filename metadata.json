@@ -1,0 +1,11 @@
+{
+  "uuid": "plume-air-quality@xfarret",
+  "name": "Plume Air Quality",
+  "description": "Affiche l'indice européen de qualité de l'air (EAQI) et les prévisions horaires via Open-Meteo.",
+  "shell-version": [
+    "50",
+    "51"
+  ],
+  "settings-schema": "org.gnome.shell.extensions.plume-air-quality",
+  "url": "https://open-meteo.com/en/docs/air-quality-api"
+}
