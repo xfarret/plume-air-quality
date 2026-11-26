@@ -1,0 +1,25 @@
+name: Build Extension ZIP
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install schema compiler
+        run: sudo apt-get update && sudo apt-get install -y libglib2.0-dev-bin zip
+
+      - name: Compile GSettings schema and zip
+        run: |
+          glib-compile-schemas plume-air-quality@xfarret/schemas/
+          zip -r plume-air-quality@xfarret.zip plume-air-quality@xfarret -x "*.git*"
+
+      - name: Upload Release asset
+        uses: softprops/action-gh-release@v2
+        with:
+          files: plume-air-quality@xfarret.zip
