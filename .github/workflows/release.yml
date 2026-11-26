@@ -16,8 +16,8 @@ jobs:
 
       - name: Compile GSettings schema and zip
         run: |
-          glib-compile-schemas plume-air-quality/schemas/
-          zip -r plume-air-quality@xfarret.zip plume-air-quality -x "*.git*"
+          glib-compile-schemas schemas/
+          zip -r plume-air-quality@xfarret.zip . -x "*.git*" ".github/*"
 
       - name: Upload Release asset
         uses: softprops/action-gh-release@v2
