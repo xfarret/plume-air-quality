@@ -100,7 +100,7 @@ class PlumeAirIndicator extends PanelMenu.Button {
             style_class: 'plume-air-city',
         });
         this._aqiBadge = new St.Label({
-            text: '-- EAQI',
+            text: '--',
             style_class: 'plume-air-aqi-badge',
         });
         topRow.add_child(this._cityTitle);
