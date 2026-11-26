@@ -75,7 +75,7 @@ class PlumeAirIndicator extends PanelMenu.Button {
         });
 
         this._label = new St.Label({
-            text: 'EAQI --',
+            text: '--',
             y_align: Clutter.ActorAlign.CENTER,
             style_class: 'plume-air-panel-label',
         });
@@ -354,7 +354,7 @@ class PlumeAirIndicator extends PanelMenu.Button {
         const no2 = data.no2 ?? '--';
         const forecast = Array.isArray(data.forecast) ? data.forecast.slice(0, 5) : [];
 
-        this._label.text = `EAQI ${aqi}`;
+        this._label.text = `${aqi}`;
         this._aqiBadge.text = `${aqi} • ${level}`;
         this._statusLabel.text = isDemo
             ? 'Mode hors-ligne / aperçu (vérifiez la connexion ou la ville)'
